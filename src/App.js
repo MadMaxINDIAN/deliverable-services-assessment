@@ -1,7 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import { useEffect, useState } from 'react';
+import { get } from './utils/apiHelper';
 
 function App() {
+    const [users, setUsers] = useState([]);
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        get('https://jsonplaceholder.typicode.com/users', null)
+            .then(res => {
+                setUsers(res.data)
+            })
+            .catch(err => {
+                console.log(err);
+            })
+    }, []);
+
     return (
         <>
             {/* HEADER */}
@@ -137,21 +152,28 @@ function App() {
                     <p className='reviews-section-title'>
                         The world's best workplaces choose Hipla
                     </p>
-                    <div className='reviews-section-card flex'>
-                        <img src="client.png" className='reviews-section-card-img' />
+                    {users.map((user, i) => 
+                    index === i ? <div className='reviews-section-card flex'>
+                        <i class="fa-solid fa-chevron-right right-icon" onClick={() => {
+                            setIndex((index+1)%users.length)
+                        }} ></i>
+                        <i class="fa-solid fa-chevron-left left-icon" onClick={() => {
+                            setIndex((index-1)%users.length)
+                        }}></i>
+                        <img src="https://source.unsplash.com/random?search=person" className='reviews-section-card-img' />
                         <div className='flex-column' style={{ marginTop: "5%", justifyContent: "center", alignItems: "center" }}>
-                            <p className='reviews-section-card-title'>Company stitched together Visitor Management, Indoor Navigation, Pantry Management...</p>
+                            <p className='reviews-section-card-title'>{user.company.catchPhrase + " " + user.company.bs}</p>
                             <p className='reviews-section-card-name'>
-                            Dishant Agnihotri
+                                {user.name}
                             </p>
                             <p className='reviews-section-card-designation'>
-                            Director of technology, AIPL
+                                {user.email}
                             </p>
-                            <p className='reviews-section-card-description'>Company eco system helps AIPL to setup their smart workplace. Company eco system helps AIPL to setup their smart workplace.</p>
+                            <p className='reviews-section-card-description'>{user.company.catchPhrase + " " + user.company.bs}</p>
                             <p className='reviews-section-card-redirect'>READ FULL CASE STUDY</p>
                         </div>
                         <img className='reviews-section-card-quotes' src="quotes.png" />
-                    </div>
+                    </div> : <></>)}
                     <div className='flex' style={{ justifyContent: 'space-between', padding: "0px 15rem", alignItems: "center" }}>
                         <img src="logo1.png" className='reviews-section-logo-img' />
                         <img src="logo2.png" className='reviews-section-logo-img' />

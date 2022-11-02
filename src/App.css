@@ -303,7 +303,9 @@
 }
 
 .reviews-section-card-img {
-    height: 100%
+    height: 100%;
+    width: 400px;
+    object-fit: cover;
 }
 
 .reviews-section-card-quotes {
@@ -363,4 +365,20 @@
     background-color: #fff;
     background-blend-mode: luminosity;
     mix-blend-mode: lighten;
+}
+
+.reviews-section-card > .fa-solid {
+    position: absolute;
+    color: #999;
+    top: 45%;
+}
+
+.reviews-section-card > .left-icon {
+    font-size: 30px;
+    left: -50px;
+}
+
+.reviews-section-card > .right-icon {
+    font-size: 30px;
+    right: -50px;
 }
