@@ -133,21 +133,15 @@
     right: 46px;
 }
 
-.landing-div-hover-6 {
-    top: 65%;
-    left: 50px;
-}
-
 .absolute {
     position: absolute;
 }
 
 .features-div {
     background-color: #F6FAFD;
-    min-height: 650px;
+    min-height: 850px;
     padding-left: 80px;
     width: 100%;
-    position: relative;
 }
 
 .features-card {
@@ -228,5 +222,145 @@
 
 .features-div-section-2 {
     position: absolute;
-    right: 150px;
+    right: 13px;
+}
+
+.additional-section {
+    min-height: 340px;
+    width: 100%;
+    position: relative;
+    background: #303546;
+}
+
+.additional-section-img {
+    object-fit: cover;
+    position: absolute;
+    opacity: 0.3;
+}
+
+.additional-section-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: #fff;
+    max-width: 800px;
+    padding: 0px 10rem;
+    padding-top: 50px;
+}
+
+.additional-section-watch-img {
+    width: 130px;
+    object-fit: scale-down;
+}
+
+.additional-section-learn-more {
+    color: #fff;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    border-bottom: 3px solid white;
+    margin-left: 50px;
+}
+
+.reviews-section-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 50px;
+    margin: 100px 0px 50px;
+}
+
+.reviews-section {
+    position: relative;
+}
+
+.additional-section-dotted-icons-1 {
+    position: absolute;
+    max-width: 80px;
+    bottom: -40px;
+    left: 0px;
+}
+
+.additional-section-dotted-icons-2 {
+    position: absolute;
+    max-width: 80px;
+    top: -40px;
+    right: 0px;
+}
+
+.reviews-section-card {
+    width: 972px;
+    position: relative;
+    margin-bottom: 2rem;
+    height: 372px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.reviews-section-card-img {
+    height: 100%
+}
+
+.reviews-section-card-quotes {
+    position: absolute;
+    top: -8%;
+    width: 25%;
+    left: 45%
+}
+
+.reviews-section-card-title {
+    font-family: 'Noto Sans';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.reviews-section-card-name {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    margin: 0px;
+    font-size: 18px;
+}
+
+.reviews-section-card-designation {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    margin: 0px;
+    font-size: 15px;
+}
+
+.reviews-section-card-description {
+    font-family: 'Lato';
+    font-style: normal;
+    max-width: 80%;
+    text-align: left;
+    margin-top: 4rem;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.reviews-section-card-redirect {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    position: absolute;
+    bottom: 0px;
+    right: 25px;
+    font-size: 14px;
+    color: #2D59A8;
+}
+
+.reviews-section-logo-img {
+    width: 15%;
+    object-fit: scale-down;
+    background-color: #fff;
+    background-blend-mode: luminosity;
+    mix-blend-mode: lighten;
 }

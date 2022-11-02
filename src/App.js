@@ -86,9 +86,9 @@ function App() {
                         </div>
                     </div>
                 </div>
-                    <div className='absolute landing-div-hover-6'>
-                        <img src="/illustration-two.png" className='landing-div-illustration-img' />
-                    </div>
+                <div className='absolute landing-div-hover-6'>
+                    <img src="/illustration-two.png" className='landing-div-illustration-img' />
+                </div>
                 <div className='features-div-section-2'>
                     <p className='features-div-title'>Vision Cloud</p>
                     <p className='features-div-description'>Unique and powerful suite of software to run your entire business.</p>
@@ -120,6 +120,48 @@ function App() {
                     </div>
                 </div>
             </div>
+            {/* ADDITIONAL SECTION */}
+            <div className='additional-section'>
+                <img className='additional-section-img' src="/group-diverse-people-having-business-meeting.png" />
+                <p className='additional-section-title'>Company full ecosystem of solutions address the critical office process making them easier to accomplish</p>
+                <div className='flex' style={{ padding: "0px 10rem" }}>
+                    <img src="/watch-now.png" className='additional-section-watch-img' />
+                    <p className='additional-section-learn-more'>Learn more</p>
+                </div>
+                <img src="/yellow-dots.png" className='additional-section-dotted-icons-1' />
+                <img src="/red-dots.png" className='additional-section-dotted-icons-2' />
+            </div>
+            {/* Review Section */}
+            <div className='reviews-section'>
+                <center>
+                    <p className='reviews-section-title'>
+                        The world's best workplaces choose Hipla
+                    </p>
+                    <div className='reviews-section-card flex'>
+                        <img src="client.png" className='reviews-section-card-img' />
+                        <div className='flex-column' style={{ marginTop: "5%", justifyContent: "center", alignItems: "center" }}>
+                            <p className='reviews-section-card-title'>Company stitched together Visitor Management, Indoor Navigation, Pantry Management...</p>
+                            <p className='reviews-section-card-name'>
+                            Dishant Agnihotri
+                            </p>
+                            <p className='reviews-section-card-designation'>
+                            Director of technology, AIPL
+                            </p>
+                            <p className='reviews-section-card-description'>Company eco system helps AIPL to setup their smart workplace. Company eco system helps AIPL to setup their smart workplace.</p>
+                            <p className='reviews-section-card-redirect'>READ FULL CASE STUDY</p>
+                        </div>
+                        <img className='reviews-section-card-quotes' src="quotes.png" />
+                    </div>
+                    <div className='flex' style={{ justifyContent: 'space-between', padding: "0px 15rem", alignItems: "center" }}>
+                        <img src="logo1.png" className='reviews-section-logo-img' />
+                        <img src="logo2.png" className='reviews-section-logo-img' />
+                        <img src="logo3.png" className='reviews-section-logo-img' />
+                        <img src="logo4.png" className='reviews-section-logo-img' />
+                        <img src="logo6.png" className='reviews-section-logo-img' />
+                    </div>
+                </center>
+            </div>
+            <div style={{ height: "4rem" }}></div>
         </>
     );
 }
