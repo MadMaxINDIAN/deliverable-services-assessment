@@ -1,38 +1,232 @@
-.App {
-  text-align: center;
+.navbar {
+    width: 100%;
+    height: 72px;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: #0635C9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link-font {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding: 0px 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-outlined {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    background-color: #fff;
+    color: #2D59A8;
+    width: 152px;
+    height: 38px;
+    border: 1px solid #2D59A8;
+    border-radius: 4px;
+    padding: 0px;
+    margin: 0px 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-filled {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    background-color: #2D59A8;
+    color: #FFF;
+    width: 152px;
+    height: 38px;
+    border-bottom: 1px solid #2D59A8;
+    border-radius: 4px;
+    margin: 0px 10px;
+    padding: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-links {
+    justify-content: space-between;
+    flex: 1;
+    padding-left: 40px;
+}
+
+.landing-main-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 68px;
+    color: #1D1D1D;
+    margin: 0px;
+}
+
+.landing-main-description {
+    margin-top: 0px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    color: #1D1D1D;
+}
+
+.landing-div {
+    min-height: 364px;
+    position: relative;
+}
+
+.landing-div-hover-img {
+    width: 50px;
+}
+
+.landing-div-illustration-img {
+    width: 400px;
+}
+
+.landing-div-hover-1 {
+    top: 50px;
+    left: 300px;
+}
+
+.landing-div-hover-2 {
+    top: 220px;
+    left: 146px;
+}
+
+.landing-div-hover-3 {
+    bottom: 150px;
+    right: 100px;
+}
+
+.landing-div-hover-4 {
+    bottom: 30px;
+    right: 446px;
+}
+
+.landing-div-hover-5 {
+    bottom: -300px;
+    right: 46px;
+}
+
+.landing-div-hover-6 {
+    top: 65%;
+    left: 50px;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.features-div {
+    background-color: #F6FAFD;
+    min-height: 650px;
+    padding-left: 80px;
+    width: 100%;
+    position: relative;
+}
+
+.features-card {
+    height: 220px;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin: 13px;
+    position: relative;
+}
+
+.features-card-small {
+    height: 96px;
+    width: 250px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin: 13px;
+    z-index: 5;
+}
+
+.features-card-small>.fa-solid,
+.features-card>.fa-solid {
+    position: absolute;
+    bottom: 10px;
+    font-size: larger;
+    right: 15px;
+}
+
+.features-card-img {
+    width: 15%;
+    margin: 15px;
+    margin-bottom: 5px;
+}
+
+.features-card-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 0px;
+    margin-left: 15px;
+}
+
+.features-card-description {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.features-div-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    position: relative;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    margin: 0px;
+    padding-top: 70px;
+    margin-left: 13px;
+}
+
+.features-div-description {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0px;
+    margin-left: 13px;
+    margin-bottom: 20px;
+}
+
+.features-div-section-2 {
+    position: absolute;
+    right: 150px;
 }
